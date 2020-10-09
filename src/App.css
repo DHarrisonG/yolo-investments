@@ -3,11 +3,22 @@
 }
 
 .menubar {
-  display: flex
+  color: white;
+  background: black;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 .menulinks > li {
   list-style-type: none;
   display: inline-block;
   margin: 10px;
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: 100px;
 }
