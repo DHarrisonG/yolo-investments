@@ -11,7 +11,7 @@ class Nav extends React.Component {
                     </ul>
                 </div>
                 <div id="logo">
-                    <h1>Logo Temp</h1>
+                    <img src="logo.png"/>
                 </div>
             </div>
         )

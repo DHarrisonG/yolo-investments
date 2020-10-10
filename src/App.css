@@ -15,10 +15,15 @@
 .menulinks > li {
   list-style-type: none;
   display: inline-block;
-  margin: 10px;
+  margin-left: 60px
 }
 
 #logo {
   margin-left: auto;
   margin-right: 100px;
+}
+
+#logo > img {
+  width: auto;
+  height: 60px;
 }
