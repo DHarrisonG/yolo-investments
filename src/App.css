@@ -23,7 +23,21 @@
   margin-right: 100px;
 }
 
+.header {
+  background: black;
+}
+
 #logo > img {
   width: auto;
   height: 60px;
+}
+
+.header > #header-img > img {
+  width: 100%;
+}
+
+.header > #sneaker-img > img {
+  width: auto;
+  height: 75px;
+  margin: 10px;
 }
