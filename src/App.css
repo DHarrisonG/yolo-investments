@@ -41,3 +41,19 @@
   height: 75px;
   margin: 10px;
 }
+
+.company-container {
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+
+.company-container > h1 {
+  line-height: 60px;
+  font-size: 60px; 
+  font-weight: 50;
+}
+
+.company-container > hr {
+  border: 1px solid red;
+  width: 50%;
+}
