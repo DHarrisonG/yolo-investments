@@ -56,4 +56,35 @@
 .company-container > hr {
   border: 1px solid red;
   width: 50%;
+  margin-bottom: 40px;
+  
 }
+
+.social-container {
+  color: white;
+  background: black;
+}
+
+.social-container > h1 {
+  line-height: 60px;
+  font-size: 60px; 
+  font-weight: 50;
+  display:inline-block;
+  margin: 40px
+}
+
+.social-links > img {
+  width: auto;
+  height: 100px;
+}
+
+.social-links {
+  margin: auto;
+  padding-bottom: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .social-container > img {
+} */
