@@ -73,7 +73,7 @@
   margin: 40px
 }
 
-.social-links > a >img {
+.social-links > a > img {
   width: auto;
   height: 100px;
 }
@@ -84,6 +84,24 @@
   width: 60%;
   display: flex;
   justify-content: space-around;
+}
+
+/* .about-menu {
+  background: black;
+} */
+
+.about-menu > ul {
+  margin: auto;
+  width: 90%;
+ display: flex;
+ justify-content: space-around;
+ color: white;
+ background-color: red;
+}
+
+.about-menu > ul > li {
+  list-style-type: none;
+  display: inline-block;
 }
 
 /* .social-container > img {

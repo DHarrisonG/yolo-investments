@@ -5,6 +5,7 @@ import Nav from './Components/Nav'
 import Header from './Components/Header'
 import Company from './Components/Company'
 import Social from './Components/Social'
+import About from './Components/About'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Company />
       <Social />
+      <About />
     </div>
   );
 }
