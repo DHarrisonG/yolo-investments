@@ -73,7 +73,7 @@
   margin: 40px
 }
 
-.social-links > img {
+.social-links > a >img {
   width: auto;
   height: 100px;
 }
