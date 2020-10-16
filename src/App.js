@@ -6,6 +6,7 @@ import Header from './Components/Header'
 import Company from './Components/Company'
 import Social from './Components/Social'
 import About from './Components/About'
+import Contact from './Components/Contact'
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Company />
       <Social />
       <About />
+      <Contact />
+
     </div>
   );
 }
