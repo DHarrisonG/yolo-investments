@@ -11,7 +11,6 @@ class Contact extends React.Component {
             message: ""
         }
     }
-
     
     render() {
         return (
