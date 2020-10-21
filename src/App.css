@@ -107,11 +107,16 @@
 /* .social-container > img {
 } */
 
+.about-container {
+  width: 80%;
+  margin: auto;
+}
+
 
 /* Tabs*/
 .tab {
   margin: auto;
-  width: 70%;
+  width: 100%;
   display: flex;
   overflow: hidden;
   border: 1px solid #ccc;
@@ -148,11 +153,12 @@
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
 .tabcontent > img {
-  width: 72%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
