@@ -31,6 +31,11 @@ class About extends React.Component {
 
         return (
             <div className='about-container'>
+                <h1>ABOUT US</h1>
+                <h4>From record-breaking contracts to strategic brand building, from elite, personalized pre-draft training to specialized work with athlete foundations, 
+                    we will help you with every aspect of your career.</h4>
+
+
                 <div class="tab">
                     <button class="tablinks" onClick={(event) => this.openCity(event, 'London')} ref={this.handleDefaultClick} >London</button>
                     <button class="tablinks" onClick={(event) => this.openCity(event, 'Paris')}>Paris</button>

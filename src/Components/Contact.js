@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Contact extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
         this.state = {
@@ -11,26 +11,37 @@ class Contact extends React.Component {
             message: ""
         }
     }
-    
+
     render() {
         return (
+            <>
             <div>
-                <h1>CONTACT</h1>
-                <form action="emailto:dougharrisonaudio@gmail.com">
-                    <label for="name">Your Name:</label><br/>
-                    <input type="text" id="name" name="name" /><br/>
-
-                    <label for="name">Your Email:</label><br/>
-                    <input type="email" id="email" name="email" /><br/>
-
-                    <label for="name">Subject:</label><br/>
-                    <input type="text" id="subject" name="subject" /><br/>
-
-                    <label for="name">Message:</label><br/>
-                    <textarea id="memssage" name="message" /><br/>
-                    <input type="submit" value="Submit"/>
-            </form>
+                <h1>CONTACT US</h1>
             </div>
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style={{height: "200px"}}></textarea>
+
+                    <input type="submit" value="Submit" />
+
+                </form>
+            </div>
+            </>
         )
     }
 

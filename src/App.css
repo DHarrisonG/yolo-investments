@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+/* TOP SECTION */
+
+
 .menubar {
   color: white;
   background: black;
@@ -42,6 +45,9 @@
   margin: 10px;
 }
 
+/* COMPANY SECTION */
+
+
 .company-container {
   margin-top: 50px;
   margin-bottom: 50px
@@ -59,6 +65,9 @@
   margin-bottom: 40px;
   
 }
+
+/* SOCIAL SECTION */
+
 
 .social-container {
   color: white;
@@ -86,13 +95,11 @@
   justify-content: space-around;
 }
 
-/* .about-menu {
-  background: black;
-} */
+/* ABOUT SECTION */
 
 .about-menu > ul {
-  margin: auto;
-  width: 90%;
+ margin: auto;
+ width: 90%;
  display: flex;
  justify-content: space-around;
  color: white;
@@ -104,23 +111,27 @@
   display: inline-block;
 }
 
-/* .social-container > img {
-} */
 
 .about-container {
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 
+.about-container > h1{
+  line-height: 60px;
+  font-size: 60px; 
+  font-weight: 50;
+}
 
-/* Tabs*/
+
 .tab {
   margin: auto;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  /* border: 1px solid #ccc; */
+  background-color: black;
   justify-content: space-around;
 }
 
@@ -128,29 +139,28 @@
   display: inline-block;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
+  color: white;
   width: 100%;
   background-color: inherit;
   float: left;
   border: none;
-  outline: 1px solid black;
+  outline: 1px solid red;
   cursor: pointer;
   padding: 14px 50px;
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
+
 .tab button:hover {
-  background-color: #ddd;
+  background-color: red;
 }
 
-/* Create an active/current tablink class */
+
 .tab button.active {
-  background-color: #ccc;
+  background-color: red;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   border-top: none;
@@ -161,4 +171,42 @@
   height: auto;
   max-width: 100%;
   max-height: 100%;
+}
+
+/* CONTACT SECTION */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin: auto;
+  max-width: 75%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
