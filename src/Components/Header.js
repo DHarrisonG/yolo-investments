@@ -7,8 +7,8 @@ class Header extends React.Component {
                 <div id='header-img' >
                     <img src='business.jpg' />
                 </div>
-                <div id='sneaker-img'>
-                    <img src='sneaker.png' />
+                <div id='stonk'>
+                    <img src='stonk.png' />
                 </div>
             </div>
         )
