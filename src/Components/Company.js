@@ -6,7 +6,7 @@ class Company extends React.Component {
             <div className='company-container'>
                 <h1>THE COMPANY</h1>
                 <hr></hr>
-                <h4>Dedicated to the old adage "Cash rules everything around us". We work hard to diversify your value so you don't have to.</h4>
+                <h4>Dedicated to the old adage "Cash rules everything around us". We work hard to diversify your wealth so you don't have to.</h4>
             </div>
         )
     }

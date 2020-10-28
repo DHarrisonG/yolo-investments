@@ -130,6 +130,10 @@
   font-weight: 50;
 }
 
+#losses {
+  font-size: 10px;
+}
+
 
 .tab {
   margin: auto;
