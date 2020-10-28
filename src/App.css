@@ -23,23 +23,30 @@
 
 #logo {
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .header {
   background: black;
 }
 
-#logo > img {
+#yolo {
   width: auto;
-  height: 60px;
+  height: 30px;
+}
+
+#money-stack {
+  width: auto;
+  height: 70px;
 }
 
 .header > #header-img > img {
   width: 100%;
 }
 
-.header > #sneaker-img > img {
+.header > #stonk > img {
   width: auto;
   height: 75px;
   margin: 10px;
@@ -121,6 +128,10 @@
   line-height: 60px;
   font-size: 60px; 
   font-weight: 50;
+}
+
+#losses {
+  font-size: 10px;
 }
 
 
