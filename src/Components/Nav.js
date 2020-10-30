@@ -6,9 +6,10 @@ class Nav extends React.Component {
             <div className="menubar">
                 <div id="menu">
                     <ul className="menulinks">
-                        <li>SOCIAL</li>
-                        <li>ABOUT</li>
-                        <li>CONTACT</li>
+                        <li><a href='#company-link'>COMPANY</a></li>
+                        <li><a href='#social-link'>SOCIAL</a></li>
+                        <li><a href='#about-link'>ABOUT</a></li>
+                        <li><a href='#contact-link'>CONTACT</a></li>
                     </ul>
                 </div>
                 <div id="logo">

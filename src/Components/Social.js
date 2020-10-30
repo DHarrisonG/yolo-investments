@@ -4,7 +4,7 @@ class Social extends React.Component {
 
     render() {
         return (
-            <div className='social-container'>
+            <div className='social-container' id="social-link">
                 <h1>SOCIAL</h1>
                 <div className='social-links'>
                     <a href="https://www.linkedin.com/in/dharrisong" target="_blank"><img src="social-links/linkedin-white.png" /></a>

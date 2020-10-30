@@ -30,7 +30,7 @@ class About extends React.Component {
     render() {
 
         return (
-            <div className='about-container'>
+            <div className='about-container' id="about-link">
                 <h1>ABOUT US</h1>
                     <h4>From record-breaking gains <span id="losses">and losses</span>, our services differ from the massive Wall Street institutions 
                         and other large firms who worry more about "legality" and "regulations" to empower <span id="losses">or destroy</span> your future.</h4>

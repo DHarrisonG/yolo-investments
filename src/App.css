@@ -3,7 +3,10 @@
 }
 
 /* TOP SECTION */
-
+@font-face {
+  font-family: 'myFont';
+  src: url("/public/LaborUnion.woff");
+}
 
 .menubar {
   color: white;
@@ -16,9 +19,26 @@
 }
 
 .menulinks > li {
+  font-family: myFont;
   list-style-type: none;
   display: inline-block;
   margin-left: 60px
+}
+
+.menulinks > li > a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #7fa35f;
 }
 
 #logo {
