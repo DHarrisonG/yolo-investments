@@ -20,6 +20,7 @@
 
 .menulinks > li {
   font-family: myFont;
+  font-weight: bold;
   list-style-type: none;
   display: inline-block;
   margin-left: 60px

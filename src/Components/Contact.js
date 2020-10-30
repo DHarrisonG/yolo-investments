@@ -1,15 +1,11 @@
 import React from 'react'
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
-        }
+    
+    handleSubmit = (e) => {
+        e.preventDefault()
+        alert("This is a demo page, contacting is unavailable")
     }
 
     render() {
@@ -30,7 +26,7 @@ class Contact extends React.Component {
                         <label for="subject">Subject</label>
                         <textarea id="subject" name="subject" placeholder="Write something.." style={{height: "200px"}}></textarea>
 
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" onClick={this.handleSubmit}/>
 
                     </form>
                 </div>
