@@ -3,18 +3,81 @@
 }
 
 /* TOP SECTION */
+
 @font-face {
   font-family: 'myFont';
   src: url("/public/LaborUnion.woff");
 }
 
 .menubar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+  background: black;
+  align-items: center;
+  height: 100px;
+  overflow: hidden
+}
+
+.menu {
+  /* width: 100%; */
+  flex: 1;
+}
+
+#logo {
+  /* width: 100%; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.menulinks>li {
+  font-family: myFont;
+  font-weight: bold;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 60px
+}
+
+.menulinks>li>a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #7fa35f;
+}
+
+#yolo {
+  width: 70%;
+  max-width: 950px;
+  height: auto;
+}
+
+#money-stack {
+  width: 10%;
+  max-width: 100px;
+  height: auto;
+}
+
+/* .menubar {
   color: white;
   background: black;
   height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   
 }
 
@@ -47,6 +110,7 @@ a:hover {
   margin-right: 30px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .header {
@@ -54,20 +118,21 @@ a:hover {
 }
 
 #yolo {
-  width: auto;
-  height: 30px;
+  width: 50%;
+  height: auto;
 }
 
 #money-stack {
-  width: auto;
-  height: 70px;
-}
+  width: 10%;
+  height: auto;
+  max-width: 100px;
+} */
 
-.header > #header-img > img {
+.header>#header-img>img {
   width: 100%;
 }
 
-.header > #stonk > img {
+.header>#stonk>img {
   width: auto;
   height: 75px;
   margin: 10px;
@@ -75,42 +140,39 @@ a:hover {
 
 /* COMPANY SECTION */
 
-
 .company-container {
   margin-top: 50px;
   margin-bottom: 50px
 }
 
-.company-container > h1 {
+.company-container>h1 {
   line-height: 60px;
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 50;
 }
 
-.company-container > hr {
+.company-container>hr {
   border: 1px solid red;
   width: 50%;
   margin-bottom: 40px;
-  
 }
 
 /* SOCIAL SECTION */
-
 
 .social-container {
   color: white;
   background: black;
 }
 
-.social-container > h1 {
+.social-container>h1 {
   line-height: 60px;
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 50;
-  display:inline-block;
+  display: inline-block;
   margin: 40px
 }
 
-.social-links > a > img {
+.social-links>a>img {
   width: auto;
   height: 100px;
 }
@@ -125,36 +187,34 @@ a:hover {
 
 /* ABOUT SECTION */
 
-.about-menu > ul {
- margin: auto;
- width: 90%;
- display: flex;
- justify-content: space-around;
- color: white;
- background-color: red;
+.about-menu>ul {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: red;
 }
 
-.about-menu > ul > li {
+.about-menu>ul>li {
   list-style-type: none;
   display: inline-block;
 }
-
 
 .about-container {
   width: 95%;
   margin: auto;
 }
 
-.about-container > h1{
+.about-container>h1 {
   line-height: 60px;
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 50;
 }
 
 #losses {
   font-size: 10px;
 }
-
 
 .tab {
   margin: auto;
@@ -183,11 +243,9 @@ a:hover {
   transition: 0.3s;
 }
 
-
 .tab button:hover {
   background-color: red;
 }
-
 
 .tab button.active {
   background-color: red;
@@ -198,7 +256,7 @@ a:hover {
   border-top: none;
 }
 
-.tabcontent > img {
+.tabcontent>img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -211,27 +269,36 @@ a:hover {
   background: black;
 }
 
-.contact-container > h1 {
+.contact-container>h1 {
   padding-top: 40px;
   line-height: 60px;
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 50;
   color: white
 }
 
 /* Style inputs with type="text", select elements and textareas */
+
 input[type=text], input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -242,11 +309,13 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
+
 .container {
   margin: auto;
   max-width: 75%;
@@ -254,7 +323,6 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
 
 /* FOOTER SECTION */
 
@@ -264,6 +332,38 @@ input[type=submit]:hover {
   overflow: hidden
 }
 
-/* .footer-container > p {
-  margin
-} */
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 760px) {
+  body {
+    width: 100%;
+  }
+  .menubar {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    /* justify-content: center; */
+  }
+  #logo {
+    justify-content: center;
+  }
+  #menu {
+    margin-left: -70px;
+  }
+  .menulinks {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    width: 100%;
+  }
+  #yolo {
+    width: auto;
+    height: 30px;
+  }
+  #money-stack {
+    visibility: hidden
+  }
+}
